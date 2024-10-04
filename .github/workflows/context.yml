@@ -10,3 +10,5 @@ jobs:
         run: echo "Hello $MY_ACTION"
         env:
           MY_ACTION: ${{ github.action }}
+      - name: Step 2
+        run: echo ${{ vars.large_runner }}
