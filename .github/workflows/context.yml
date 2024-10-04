@@ -12,3 +12,5 @@ jobs:
           MY_ACTION: ${{ github.action }}
       - name: Step 2
         run: echo ${{ vars.large_runner }}
+      - name: Step 3
+        run: echo ${{ github.actor }}
