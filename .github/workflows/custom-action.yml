@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: hello world
         id: hello
-        uses: AbhimanyuDatta/hello-barsoom@0.0.1
+        uses: AbhimanyuDatta/hello-barsoom@0.02
         with: 
           name: 'World'
       - name: Get the output
