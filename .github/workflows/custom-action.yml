@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello world
+        id: hello
+        uses: AbhimanyuDatta/hello-barsoom@0.0.1
+        with: 
+          name: 'World'
+      - name: Get the output
+        run: echo "Greeting is ${{ steps.hello.outputs.greeting }}"
